@@ -79,13 +79,16 @@ public class ForecastAdapter extends RecyclerView.Adapter<ForecastAdapter.ForeCa
                 case 1:
                     tvDay.setText("Tomorrow");
                     break;
-                case 3:
+                case 2:
                     calendar.add(Calendar.DAY_OF_MONTH, 2);
-                    int n = calendar.getTime().getDay();
+                    tvDay.setText(Utils.getDateFormDayOfWeek(calendar.getTime().getDay()));
+                    break;
+                case 3:
+                    calendar.add(Calendar.DAY_OF_MONTH, 3);
                     tvDay.setText(Utils.getDateFormDayOfWeek(calendar.getTime().getDay()));
                     break;
                 case 4:
-                    calendar.add(Calendar.DAY_OF_MONTH, 1);
+                    calendar.add(Calendar.DAY_OF_MONTH, 4);
                     tvDay.setText(Utils.getDateFormDayOfWeek(calendar.getTime().getDay()));
                     break;
             }

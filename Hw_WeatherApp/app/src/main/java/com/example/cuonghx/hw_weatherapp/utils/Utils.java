@@ -20,13 +20,13 @@ public class Utils {
     public static String getDateFormDayOfWeek(int n){
         switch (n){
             case 0:
-                return "SunDay";
+                return "Sunday";
 
             case 1:
-                return "MonDay";
+                return "Monday";
 
             case 2:
-                return "TuesDay";
+                return "Tuesday";
 
             case 3:
                 return "Wednesday";
@@ -34,7 +34,7 @@ public class Utils {
             case 4:
                 return "Thursday";
             case 5:
-                return "FriDay";
+                return "Friday";
 
             case 6:
                 return "Saturday";
