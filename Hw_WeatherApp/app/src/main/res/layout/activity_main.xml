@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.cuonghx.hw_weatherapp.activities.MainActivity">
+
+    <ImageView
+        android:scaleType="centerCrop"
+        android:id="@+id/iv_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <RelativeLayout
+        android:id="@+id/rl_search"
+        android:layout_margin="16dp"
+        android:background="@drawable/layout_bg"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <ImageView
+            android:id="@+id/iv_search"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_search_black_24dp"/>
+        <EditText
+            android:id="@+id/edt_main"
+            android:lines="1"
+            android:layout_marginLeft="16dp"
+            android:textColor="#000000"
+            android:background="#00ffffff"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/iv_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_margin="16dp"
+        android:id="@+id/rl_current"
+        android:layout_below="@id/rl_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_forecast"
+        android:background="@drawable/layout_bg"
+        android:layout_margin="16dp"
+        android:layout_below="@id/rl_current"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</RelativeLayout>

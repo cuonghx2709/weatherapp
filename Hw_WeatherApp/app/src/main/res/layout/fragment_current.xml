@@ -1,0 +1,110 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/layout_bg"
+    tools:context="com.example.cuonghx.hw_weatherapp.fragments.CurrentFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <RelativeLayout
+        android:background="@drawable/layout_bg"
+        android:id="@+id/rl_current"
+        android:layout_below="@id/rl_search"
+        android:layout_width="match_parent"
+        android:layout_height="130dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:padding="16dp"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2">
+                <TextView
+                    android:id="@+id/tv_deg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="24"
+                    android:textSize="70dp"/>
+                <TextView
+                    android:layout_toRightOf="@id/tv_deg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="30dp"
+                    android:text="o"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:id="@+id/tv_name"
+                    android:text="Ha noi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:padding="16dp"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3">
+
+                <RelativeLayout
+                    android:layout_marginTop="10dp"
+                    android:id="@+id/rl_main"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp">
+                    <ImageView
+                        android:layout_marginRight="16dp"
+                        android:id="@+id/iv_icon_main"
+                        android:layout_centerVertical="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_search_black_24dp"/>
+
+                    <TextView
+                        android:lines="1"
+                        android:id="@+id/tv_main_weather"
+                        android:textSize="25dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:text="Clear"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_below="@id/rl_main"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp">
+                    <ImageView
+                        android:scaleType="centerCrop"
+                        android:id="@+id/iv_ic_rain"
+                        android:layout_centerVertical="true"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp" />
+
+                    <TextView
+                        android:paddingLeft="16dp"
+                        android:id="@+id/tv_rain"
+                        android:layout_toRightOf="@id/iv_ic_rain"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:text="25 %"/>
+                    <TextView
+                        android:id="@+id/tv_wind_speed"
+                        android:paddingLeft="16dp"
+                        android:text="5.6km/h"
+                        android:layout_toRightOf="@id/tv_rain"
+                        android:layout_centerVertical="true"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                </RelativeLayout>
+
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</FrameLayout>
